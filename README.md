@@ -85,7 +85,7 @@
 
     <section>
         <div class="category-buttons">
-            <button onclick="window.location.href='https://kelapasawit.github.io/formulir.html'">Kategori 1</button>
+            <button onclick="window.location.href='https://kelapasawit.github.io/formulir.html'">Formulir</button>
             <button>Kategori 2</button>
             <button>Kategori 3</button>
         </div>
