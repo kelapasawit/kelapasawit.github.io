@@ -1,9 +1,10 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>Template Website</title>
     <style>
         body {
-            background-color: grey;
+            background-color: cream;
             font-family: Arial, sans-serif;
         }
         
@@ -73,10 +74,18 @@
     <header>
         <h1>Selamat Datang di Template Website!</h1>
     </header>
-    
+
+    <nav>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li><a href="#">Kontak</a></li>
+        </ul>
+    </nav>
+
     <section>
         <div class="category-buttons">
-            <button>Kategori 1</button>
+            <button onclick="window.location.href='https://kelapasawit.github.io/formulir.html'">Kategori 1</button>
             <button>Kategori 2</button>
             <button>Kategori 3</button>
         </div>
