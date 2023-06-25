@@ -74,23 +74,23 @@
     </style>
     <script>
         function saveForm() {
-            var name = document.getElementById("name").value;
-            var email = document.getElementById("email").value;
-            var phone = document.getElementById("phone").value;
-            var address = document.getElementById("address").value;
-            var city = document.getElementById("city").value;
-            var zip = document.getElementById("zip").value;
-            var country = document.getElementById("country").value;
+            var name = document.getElementById("Nama Lengkap").value;
+            var email = document.getElementById("Alamat").value;
+            var phone = document.getElementById("RT/RW").value;
+            var address = document.getElementById("Kecamatan").value;
+            var city = document.getElementById("Kabupaten").value;
+            var zip = document.getElementById("TPS").value;
+            var country = document.getElementById("Koordinator").value;
             
             // Lakukan pengiriman data formulir ke server atau lakukan operasi lainnya dengan data yang telah disimpan
             console.log("Data formulir: ", {
-                Name: name,
-                Email: email,
-                Phone: phone,
-                Address: address,
-                City: city,
-                Zip: zip,
-                Country: country
+                Nama: Nama Lengkap,
+                Alamat: Alamat,
+                HP: RT/RW,
+                Kecamatan: Kecamatan,
+                Kabupaten: Kabupaten,
+                TPS: TPS,
+                Koordinator: Koorinator
             });
         }
     </script>
