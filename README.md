@@ -1,10 +1,9 @@
-# kelapasawit.github.io
 <html>
 <head>
     <title>Template Website</title>
     <style>
         body {
-            background-color: cream;
+            background-color: grey;
             font-family: Arial, sans-serif;
         }
         
@@ -74,15 +73,7 @@
     <header>
         <h1>Selamat Datang di Template Website!</h1>
     </header>
-
-    <nav>
-        <ul>
-            <li><a href="#">Beranda</a></li>
-            <li><a href="#">Tentang</a></li>
-            <li><a href="#">Kontak</a></li>
-        </ul>
-    </nav>
-
+    
     <section>
         <div class="category-buttons">
             <button>Kategori 1</button>
