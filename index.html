@@ -130,6 +130,21 @@ nav a.admbtn:hover{background:var(--green-2);color:#fff}
 @media(min-width:520px){.h2{display:inline}}
 @media(max-width:420px){nav a.kirim{display:none}}
 .brand{font-size:.85rem}
+#tentang{background:#fff;border-bottom:1px solid var(--line)}
+.about p{max-width:68ch;margin-bottom:14px}
+.about h3.sec{font-size:1.35rem;margin:36px 0 16px}
+.fn{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));list-style:none;padding:0}
+.fn li{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:20px}
+.fn .n{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--green-2);color:#fff;font-weight:700;margin-bottom:10px}
+.fn li:nth-child(2) .n{background:var(--blue)}.fn li:nth-child(3) .n{background:var(--leaf)}.fn li:nth-child(4) .n{background:var(--sun)}.fn li:nth-child(5) .n{background:var(--green)}
+.fn h4{font:700 1.05rem Fraunces,Georgia,serif;color:var(--green);margin-bottom:4px}
+.fn p{font-size:.93rem;color:var(--muted);margin:0}
+.komit{margin-top:36px;background:var(--green);color:#fff;border-radius:18px;padding:28px 22px;border-bottom:5px solid var(--kunyit)}
+.komit h3{color:var(--kunyit);font-size:1.3rem;margin-bottom:12px}
+.komit p{color:#f6e2dc;max-width:62ch}
+.komit blockquote{font:600 clamp(1.2rem,4.5vw,1.7rem) Fraunces,Georgia,serif;line-height:1.35;margin:20px 0 14px;color:#fff}
+.komit .tag{font-size:.9rem;color:var(--kunyit);font-weight:600}
+@media(min-width:640px){.komit{padding:36px}}
 footer{background:#5f0a0f;border-top:4px solid var(--kunyit);color:#f0d9d2;padding:28px 0;font-size:.88rem}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
@@ -140,7 +155,7 @@ footer{background:#5f0a0f;border-top:4px solid var(--kunyit);color:#f0d9d2;paddi
   <div class="wrap bar">
     <a class="brand" href="#atas"><span class="logo" role="img" aria-label="Lambang Rumah Aspirasi Mohamad Hekal"></span>Rumah Aspirasi<br>Mohamad Hekal</a>
     <nav aria-label="Menu utama">
-      <a class="h" href="#ringkasan">Ringkasan</a>
+      <a class="h" href="#tentang">Tentang</a>
       <a class="h" href="#alur">Alur</a>
       <a class="h" href="#lokasi">Lokasi</a>
       <a class="kirim" href="#usulan"><strong>Kirim usulan</strong></a>
@@ -164,19 +179,21 @@ footer{background:#5f0a0f;border-top:4px solid var(--kunyit);color:#f0d9d2;paddi
   </div>
 </div>
 
-<section id="ringkasan">
+<section id="tentang" class="about">
   <div class="wrap">
-    <h2>Ringkasan aspirasi</h2>
-    <p class="sub">Jumlah usulan yang sudah masuk, dihitung langsung dari data Rumah Aspirasi.</p>
-    <div id="live" hidden>
-      <div class="stats">
-        <div class="tile"><b id="sTotal">0</b><span>Total usulan masuk</span></div>
-        <div class="tile"><b id="sMonth">0</b><span>Masuk bulan ini</span></div>
-        <div class="tile"><b id="sTop">-</b><span>Topik terbanyak</span></div>
-      </div>
-      <div class="cats"><h3>Usulan menurut topik</h3><div id="bars"></div></div>
+    <h2>Rumah Aspirasi Mohamad Hekal</h2>
+    <p>Rumah Aspirasi Mohamad Hekal merupakan ruang pelayanan dan komunikasi masyarakat yang hadir sebagai wadah untuk menyerap, menampung, mengawal, dan memperjuangkan aspirasi masyarakat.</p>
+    <p>Rumah Aspirasi menjadi jembatan komunikasi antara masyarakat dengan Mohamad Hekal, MBA., khususnya dalam menyampaikan berbagai kebutuhan, persoalan, masukan, serta gagasan yang berkembang di tengah masyarakat.</p>
+    <p>Melalui Rumah Aspirasi, masyarakat dapat menyampaikan aspirasi secara langsung maupun melalui berbagai saluran komunikasi yang tersedia. Setiap aspirasi diharapkan dapat menjadi bahan untuk mendorong penyelesaian persoalan dan menghasilkan kebijakan serta program yang lebih responsif terhadap kebutuhan masyarakat.</p>
+    <h3 class="sec">Fungsi Rumah Aspirasi</h3>
+    <ol class="fn"><li><span class="n">1</span><h4>Menyerap Aspirasi Masyarakat</h4><p>Menjadi tempat masyarakat menyampaikan keluhan, kebutuhan, usulan, dan gagasan mengenai berbagai persoalan di lingkungan mereka.</p></li><li><span class="n">2</span><h4>Menjadi Pusat Komunikasi</h4><p>Membangun komunikasi dua arah yang terbuka antara masyarakat dan perwakilan mereka.</p></li><li><span class="n">3</span><h4>Mengawal Aspirasi</h4><p>Membantu mengidentifikasi, mendokumentasikan, dan mengawal aspirasi masyarakat agar dapat disampaikan kepada pihak atau lembaga yang berwenang.</p></li><li><span class="n">4</span><h4>Mendorong Solusi</h4><p>Mendorong penyelesaian berbagai persoalan masyarakat melalui koordinasi, komunikasi, dan sinergi dengan pemerintah serta pemangku kepentingan terkait.</p></li><li><span class="n">5</span><h4>Membangun Partisipasi Masyarakat</h4><p>Membuka ruang bagi masyarakat untuk turut berpartisipasi dalam menyampaikan gagasan dan memberikan masukan terhadap pembangunan.</p></li></ol>
+    <div class="komit">
+      <h3>Komitmen</h3>
+      <p>Rumah Aspirasi Mohamad Hekal berkomitmen untuk menjadi ruang yang terbuka, responsif, dan dekat dengan masyarakat.</p>
+      <p>Setiap aspirasi merupakan bagian penting dari proses membangun komunikasi dan memperkuat hubungan antara masyarakat dengan wakilnya.</p>
+      <blockquote>“Mendengar Aspirasi, Mengawal Perjuangan, Menghadirkan Solusi.”</blockquote>
+      <div class="tag">Ruang Aspirasi • Ruang Komunikasi • Ruang Solusi</div>
     </div>
-    <p id="liveEmpty" class="sub">Ringkasan akan tampil setelah layanan data tersambung.</p>
   </div>
 </section>
 
@@ -258,7 +275,15 @@ footer{background:#5f0a0f;border-top:4px solid var(--kunyit);color:#f0d9d2;paddi
       </form>
     </div>
     <div id="aList" hidden>
-      <div class="adm-top"><h2>Daftar aspirasi masuk</h2><button class="btn btn-out btn-sm" id="aout" type="button">Keluar</button></div>
+      <div class="adm-top"><h2>Ringkasan aspirasi</h2><button class="btn btn-out btn-sm" id="aout" type="button">Keluar</button></div>
+      <p class="sub">Jumlah usulan yang sudah masuk, dihitung langsung dari data Rumah Aspirasi.</p>
+      <div class="stats">
+        <div class="tile"><b id="sTotal">0</b><span>Total usulan masuk</span></div>
+        <div class="tile"><b id="sMonth">0</b><span>Masuk bulan ini</span></div>
+        <div class="tile"><b id="sTop">-</b><span>Topik terbanyak</span></div>
+      </div>
+      <div class="cats"><h3>Usulan menurut topik</h3><div id="bars"></div></div>
+      <h2 style="margin-top:40px">Daftar aspirasi masuk</h2>
       <p class="sub" id="aCount"></p>
       <div class="atools">
         <input id="aq" type="search" placeholder="Cari nama, judul, atau isi" aria-label="Cari">
@@ -338,29 +363,11 @@ $("#f").addEventListener("submit", async e => {
     await fetch(SCRIPT_URL, {method:"POST", mode:"no-cors", headers:{"Content-Type":"text/plain;charset=utf-8"}, body:JSON.stringify(payload)});
     show("ok","Aspirasi Anda sudah terkirim. Terima kasih, kami akan menghubungi lewat WhatsApp bila perlu keterangan tambahan.");
     $("#f").reset(); $("#cnt").textContent = "0";
-    setTimeout(loadStats, 2500);
   }catch(err){
     show("bad","Aspirasi belum terkirim. Periksa koneksi internet lalu kirim ulang.");
   }finally{ btn.disabled = false; btn.textContent = "Kirim aspirasi"; }
 });
 
-async function loadStats(){
-  if(!ready) return;
-  try{
-    const r = await fetch(SCRIPT_URL + "?action=stats");
-    const d = await r.json();
-    $("#sTotal").textContent = d.total ?? 0;
-    $("#sMonth").textContent = d.bulanIni ?? 0;
-    const cats = Object.entries(d.kategori || {}).sort((a,b)=>b[1]-a[1]);
-    $("#sTop").textContent = cats.length ? cats[0][0].split(" ")[0] : "-";
-    const max = cats.length ? cats[0][1] : 1;
-    $("#bars").innerHTML = cats.map(([k,v]) =>
-      '<div class="row"><span>'+k.replace(/[<>&]/g,"")+'</span><div class="track"><div class="fill" data-w="'+Math.round(v/max*100)+'"></div></div><i>'+v+'</i></div>').join("") || "<p class='sub'>Belum ada data.</p>";
-    $("#live").hidden = false; $("#liveEmpty").hidden = true;
-    requestAnimationFrame(()=>document.querySelectorAll(".fill").forEach(f=>f.style.width=f.dataset.w+"%"));
-  }catch(e){ /* biarkan ringkasan tersembunyi bila gagal */ }
-}
-loadStats();
 
 // ====== ADMIN ======
 const esc = t => String(t ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -400,8 +407,18 @@ async function loadList(){
     ROWS = d.rows; $("#aLogin").hidden = true; $("#aList").hidden = false;
     const cur = $("#akat").value, kats = [...new Set(ROWS.map(r=>r.kategori))].sort();
     $("#akat").innerHTML = '<option value="">Semua topik</option>' + kats.map(k=>'<option>'+esc(k)+'</option>').join("");
-    $("#akat").value = cur; render();
+    $("#akat").value = cur; summary(); render();
   }catch(err){ logout(); lmsg("Tidak dapat memuat data. Coba lagi."); }
+}
+function summary(){
+  const now = new Date(), cur = now.getFullYear()+"-"+String(now.getMonth()+1).padStart(2,"0");
+  const kat = {}; let bln = 0;
+  ROWS.forEach(r => { kat[r.kategori] = (kat[r.kategori]||0)+1; if(String(r.waktu).slice(0,7)===cur) bln++; });
+  const cats = Object.entries(kat).sort((a,b)=>b[1]-a[1]);
+  $("#sTotal").textContent = ROWS.length; $("#sMonth").textContent = bln;
+  $("#sTop").textContent = cats.length ? cats[0][0].split(" ")[0] : "-";
+  const max = cats.length ? cats[0][1] : 1;
+  $("#bars").innerHTML = cats.map(([k,v]) => '<div class="row"><span>'+esc(k)+'</span><div class="track"><div class="fill" style="width:'+Math.round(v/max*100)+'%"></div></div><i>'+v+'</i></div>').join("") || "<p class='sub'>Belum ada data.</p>";
 }
 function filtered(){
   const q=$("#aq").value.toLowerCase(), k=$("#akat").value, st=$("#ast").value;
