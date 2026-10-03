@@ -123,6 +123,13 @@ body.adm main,body.adm .social{display:none}
 .item a.wa{font-weight:600;color:var(--leaf);text-decoration:none}
 .adm-top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
 footer a{color:#f0d9d2}
+nav{display:flex;align-items:center}
+nav a.admbtn{display:inline-flex;align-items:center;gap:6px;margin-left:14px;min-height:40px;padding:0 14px;border-radius:10px;background:var(--green);color:#fff;font-weight:600}
+nav a.admbtn:hover{background:var(--green-2);color:#fff}
+.h2{display:none}
+@media(min-width:520px){.h2{display:inline}}
+@media(max-width:420px){nav a.kirim{display:none}}
+.brand{font-size:.85rem}
 footer{background:#5f0a0f;border-top:4px solid var(--kunyit);color:#f0d9d2;padding:28px 0;font-size:.88rem}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
@@ -136,7 +143,8 @@ footer{background:#5f0a0f;border-top:4px solid var(--kunyit);color:#f0d9d2;paddi
       <a class="h" href="#ringkasan">Ringkasan</a>
       <a class="h" href="#alur">Alur</a>
       <a class="h" href="#lokasi">Lokasi</a>
-      <a href="#usulan"><strong>Kirim usulan</strong></a>
+      <a class="kirim" href="#usulan"><strong>Kirim usulan</strong></a>
+      <a class="admbtn" href="https://kelapasawit.github.io/#admin"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><span>Login<span class="h2"> Admin</span></span></a>
     </nav>
   </div>
 </header>
@@ -276,7 +284,7 @@ footer{background:#5f0a0f;border-top:4px solid var(--kunyit);color:#f0d9d2;paddi
 </section>
 
 <footer>
-  <div class="wrap">Rumah Aspirasi Mohamad Hekal · Jl. Kelapasawit, Pekauman, Tegal Barat, Kota Tegal 52125 · <a href="#admin">Admin</a></div>
+  <div class="wrap">Rumah Aspirasi Mohamad Hekal · Jl. Kelapasawit, Pekauman, Tegal Barat, Kota Tegal 52125 · <a href="https://kelapasawit.github.io/#admin">Admin</a></div>
 </footer>
 
 <script>
