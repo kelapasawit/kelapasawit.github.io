@@ -385,7 +385,7 @@ $("#lf").addEventListener("submit", async e => {
   try{
     const d = await api({action:"login", password:$("#apass").value});
     if(d.ok){ TOKEN=d.token; sessionStorage.setItem("ra_token",TOKEN); $("#lmsg").className="msg"; $("#apass").value=""; loadList(); }
-    else lmsg(d.error==="terkunci" ? "Terlalu banyak percobaan. Coba lagi 15 menit lagi." : "Sandi salah.");
+    else lmsg({terkunci:"Terlalu banyak percobaan. Coba lagi 15 menit lagi.", salah:"Sandi salah.", belum_diatur:"ADMIN_PASSWORD belum diisi di Script properties Apps Script.", kosong:"Apps Script masih versi lama. Perbarui Code.gs lalu deploy versi baru.", format:"Apps Script masih versi lama. Perbarui Code.gs lalu deploy versi baru."}[d.error] || "Login gagal ("+(d.error||"tidak diketahui")+").");
   }catch(err){ lmsg("Tidak dapat terhubung. Periksa koneksi internet."); }
   finally{ b.disabled=false; b.textContent="Masuk"; }
 });
