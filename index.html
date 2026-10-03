@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rumah Aspirasi Mohamad Hekal – Kota Tegal</title>
+<meta name="description" content="Sampaikan usulan dan aspirasi Anda untuk Kota Tegal melalui Rumah Aspirasi Mohamad Hekal.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#0f4a3c; --green-2:#176452; --kunyit:#e9b023; --paper:#f5f7f4; --card:#fff;
+  --ink:#17231f; --muted:#5b6560; --line:#dde4df; --err:#b3261e; --ok:#1b7a4b;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;-webkit-text-size-adjust:100%}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.2;color:var(--green)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--kunyit);outline-offset:2px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header.top{position:sticky;top:0;z-index:20;background:rgba(245,247,244,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;font-size:.95rem;color:var(--green)}
+.logo{width:36px;height:36px;border-radius:10px;background:var(--green);color:var(--kunyit);display:grid;place-items:center;font-family:Fraunces,serif;font-weight:700}
+nav a{margin-left:18px;text-decoration:none;font-size:.9rem;font-weight:500;color:var(--muted)}
+nav a:hover{color:var(--green)}
+@media(max-width:640px){nav a.h{display:none}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 24px;border-radius:12px;border:0;font:600 1rem inherit;font-family:inherit;cursor:pointer;text-decoration:none}
+.btn-main{background:var(--kunyit);color:#2a2000}
+.btn-main:hover{background:#f2bd3a}
+.btn-ghost{border:1.5px solid rgba(255,255,255,.55);color:#fff}
+.btn:disabled{opacity:.6;cursor:wait}
+
+.hero{background:var(--green);color:#fff;padding:56px 0 64px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-90px;top:-90px;width:300px;height:300px;border-radius:50%;border:44px solid rgba(233,176,35,.14)}
+.hero h1{color:#fff;font-size:clamp(2rem,7vw,3.4rem);max-width:15ch;font-weight:700}
+.hero p{margin:18px 0 28px;max-width:52ch;color:#d5e6df;font-size:1.05rem}
+.hero .acts{display:flex;gap:12px;flex-wrap:wrap}
+
+section{padding:52px 0}
+section h2{font-size:clamp(1.5rem,4.5vw,2.1rem);margin-bottom:8px}
+.sub{color:var(--muted);max-width:58ch;margin-bottom:28px}
+
+.stats{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px}
+.tile b{display:block;font:700 2rem Fraunces,serif;color:var(--green)}
+.tile span{font-size:.88rem;color:var(--muted)}
+.cats{margin-top:18px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px}
+.cats h3{font-size:1.05rem;margin-bottom:12px}
+.row{display:grid;grid-template-columns:120px 1fr 34px;gap:10px;align-items:center;font-size:.88rem;margin:8px 0}
+.track{height:10px;background:#e8eee9;border-radius:9px;overflow:hidden}
+.fill{height:100%;background:var(--green-2);border-radius:9px;width:0;transition:width .7s}
+.row i{font-style:normal;text-align:right;font-weight:600}
+#live[hidden]{display:none}
+
+.steps{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));counter-reset:s}
+.step{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px;position:relative}
+.step::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--kunyit);font-weight:700;margin-bottom:12px;color:#2a2000}
+.step h3{font-size:1.05rem;margin-bottom:4px}
+.step p{font-size:.92rem;color:var(--muted)}
+
+.formbox{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 10px 30px rgba(15,74,60,.07)}
+form{display:grid;gap:16px}
+.two{display:grid;gap:16px;grid-template-columns:1fr}
+@media(min-width:640px){.two{grid-template-columns:1fr 1fr}.formbox{padding:32px}}
+label{display:block;font-weight:600;font-size:.92rem;margin-bottom:6px}
+label small{font-weight:400;color:var(--muted)}
+input,select,textarea{width:100%;min-height:48px;padding:11px 14px;border:1.5px solid var(--line);border-radius:10px;font:inherit;font-size:1rem;background:#fff;color:var(--ink)}
+textarea{min-height:140px;resize:vertical}
+input:focus,select:focus,textarea:focus{border-color:var(--green-2);outline:none;box-shadow:0 0 0 3px rgba(23,100,82,.18)}
+.invalid{border-color:var(--err)!important}
+.err{color:var(--err);font-size:.82rem;margin-top:4px;min-height:0}
+.count{text-align:right;font-size:.8rem;color:var(--muted)}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:.88rem;color:var(--muted)}
+.check input{width:22px;min-height:22px;margin-top:2px;flex:none}
+.hp{position:absolute;left:-9999px;height:0;overflow:hidden}
+.msg{display:none;padding:16px;border-radius:12px;font-size:.95rem}
+.msg.ok{display:block;background:#e5f4ec;color:#145c37;border:1px solid #b9e0c9}
+.msg.bad{display:block;background:#fdeceb;color:var(--err);border:1px solid #f3c4c0}
+
+.contact{display:grid;gap:20px}
+@media(min-width:760px){.contact{grid-template-columns:1fr 1.3fr}}
+.info{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px}
+.info h3{font-size:1.1rem;margin-bottom:10px}
+.info p{margin-bottom:10px;font-size:.95rem}
+.map{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;min-height:280px;background:#e8eee9}
+.map iframe{width:100%;height:100%;min-height:280px;border:0;display:block}
+footer{background:var(--green);color:#cfe2da;padding:28px 0;font-size:.88rem}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="#atas"><span class="logo" aria-hidden="true">RA</span>Rumah Aspirasi<br>Mohamad Hekal</a>
+    <nav aria-label="Menu utama">
+      <a class="h" href="#ringkasan">Ringkasan</a>
+      <a class="h" href="#alur">Alur</a>
+      <a class="h" href="#lokasi">Lokasi</a>
+      <a href="#usulan"><strong>Kirim usulan</strong></a>
+    </nav>
+  </div>
+</header>
+
+<main id="atas">
+<div class="hero">
+  <div class="wrap">
+    <h1>Suara warga Tegal, sampai ke meja yang tepat.</h1>
+    <p>Rumah Aspirasi Mohamad Hekal menerima usulan, keluhan, dan gagasan warga Kota Tegal. Tulis aspirasi Anda, kami catat dan tindak lanjuti.</p>
+    <div class="acts">
+      <a class="btn btn-main" href="#usulan">Tulis aspirasi</a>
+      <a class="btn btn-ghost" href="#lokasi">Datang langsung</a>
+    </div>
+  </div>
+</div>
+
+<section id="ringkasan">
+  <div class="wrap">
+    <h2>Ringkasan aspirasi</h2>
+    <p class="sub">Jumlah usulan yang sudah masuk, dihitung langsung dari data Rumah Aspirasi.</p>
+    <div id="live" hidden>
+      <div class="stats">
+        <div class="tile"><b id="sTotal">0</b><span>Total usulan masuk</span></div>
+        <div class="tile"><b id="sMonth">0</b><span>Masuk bulan ini</span></div>
+        <div class="tile"><b id="sTop">-</b><span>Topik terbanyak</span></div>
+      </div>
+      <div class="cats"><h3>Usulan menurut topik</h3><div id="bars"></div></div>
+    </div>
+    <p id="liveEmpty" class="sub">Ringkasan akan tampil setelah layanan data tersambung.</p>
+  </div>
+</section>
+
+<section id="alur" style="padding-top:0">
+  <div class="wrap">
+    <h2>Bagaimana usulan Anda diproses</h2>
+    <p class="sub">Empat langkah dari formulir sampai kabar tindak lanjut.</p>
+    <div class="steps">
+      <div class="step"><h3>Anda menulis</h3><p>Isi formulir dengan topik, lokasi, dan uraian yang jelas.</p></div>
+      <div class="step"><h3>Kami mencatat</h3><p>Setiap usulan tercatat dengan nomor tiket dan waktu masuk.</p></div>
+      <div class="step"><h3>Kami memilah</h3><p>Usulan dikelompokkan menurut topik dan wilayah kelurahan.</p></div>
+      <div class="step"><h3>Kami menindaklanjuti</h3><p>Usulan diteruskan ke pihak terkait dan Anda dikabari lewat WhatsApp.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="usulan" style="padding-top:0">
+  <div class="wrap">
+    <h2>Formulir usulan aspirasi</h2>
+    <p class="sub">Kolom bertanda * wajib diisi. Data Anda hanya dipakai untuk menindaklanjuti usulan.</p>
+    <div class="formbox">
+      <form id="f" novalidate>
+        <div class="two">
+          <div><label for="nama">Nama lengkap *</label><input id="nama" name="nama" autocomplete="name" required><div class="err" data-for="nama"></div></div>
+          <div><label for="wa">Nomor WhatsApp *</label><input id="wa" name="wa" type="tel" inputmode="tel" autocomplete="tel" placeholder="08xxxxxxxxxx" required><div class="err" data-for="wa"></div></div>
+        </div>
+        <div class="two">
+          <div><label for="kel">Kelurahan / Kecamatan *</label><input id="kel" name="kelurahan" placeholder="Contoh: Pekauman, Tegal Barat" required><div class="err" data-for="kel"></div></div>
+          <div><label for="kat">Topik *</label>
+            <select id="kat" name="kategori" required>
+              <option value="">Pilih topik</option>
+              <option>Infrastruktur dan jalan</option>
+              <option>Pendidikan</option>
+              <option>Kesehatan</option>
+              <option>Ekonomi dan UMKM</option>
+              <option>Lingkungan dan kebersihan</option>
+              <option>Sosial dan kesejahteraan</option>
+              <option>Pelayanan publik</option>
+              <option>Lainnya</option>
+            </select><div class="err" data-for="kat"></div></div>
+        </div>
+        <div><label for="jud">Judul usulan *</label><input id="jud" name="judul" maxlength="120" placeholder="Ringkas dalam satu kalimat" required><div class="err" data-for="jud"></div></div>
+        <div><label for="isi">Uraian aspirasi * <small>(lokasi, masalah, dan harapan Anda)</small></label><textarea id="isi" name="isi" maxlength="1500" required></textarea><div class="count"><span id="cnt">0</span>/1500</div><div class="err" data-for="isi"></div></div>
+        <div class="hp" aria-hidden="true"><label>Jangan diisi<input name="website" tabindex="-1" autocomplete="off"></label></div>
+        <label class="check"><input type="checkbox" id="setuju"><span>Saya menyetujui data di atas disimpan dan dihubungi untuk keperluan tindak lanjut aspirasi.</span></label>
+        <div class="err" data-for="setuju"></div>
+        <button class="btn btn-main" id="kirim" type="submit">Kirim aspirasi</button>
+        <div id="msg" role="status" class="msg"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="lokasi" style="padding-top:0">
+  <div class="wrap">
+    <h2>Kunjungi Rumah Aspirasi</h2>
+    <p class="sub">Prefer bertemu langsung? Datang ke alamat berikut.</p>
+    <div class="contact">
+      <div class="info">
+        <h3>Alamat</h3>
+        <p>Jl. Kelapasawit<br>Pekauman, Kec. Tegal Barat<br>Kota Tegal, Jawa Tengah 52125</p>
+        <a class="btn btn-main" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Jl.+Kelapasawit+Pekauman+Tegal+Barat+Kota+Tegal">Buka di Google Maps</a>
+      </div>
+      <div class="map"><iframe title="Peta lokasi Rumah Aspirasi" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Jl.+Kelapasawit+Pekauman+Tegal+Barat+Kota+Tegal&amp;output=embed"></iframe></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">Rumah Aspirasi Mohamad Hekal · Jl. Kelapasawit, Pekauman, Tegal Barat, Kota Tegal 52125</div>
+</footer>
+
+<script>
+// ====== GANTI DENGAN URL WEB APP APPS SCRIPT ANDA ======
+const SCRIPT_URL = "PASTE_URL_WEB_APP_DI_SINI";
+// =======================================================
+const $ = s => document.querySelector(s);
+const ready = SCRIPT_URL.startsWith("https://script.google.com/");
+
+const isi = $("#isi");
+isi.addEventListener("input", () => $("#cnt").textContent = isi.value.length);
+
+function setErr(id, text){
+  const el = document.querySelector('[data-for="'+id+'"]');
+  if(el) el.textContent = text || "";
+  const inp = document.getElementById(id);
+  if(inp) inp.classList.toggle("invalid", !!text);
+}
+function validate(){
+  let ok = true;
+  const need = {nama:"Tulis nama lengkap Anda.", kel:"Tulis kelurahan atau kecamatan.", kat:"Pilih salah satu topik.", jud:"Tulis judul usulan.", isi:"Uraikan aspirasi Anda, minimal 20 karakter."};
+  const val = {nama:$("#nama").value, kel:$("#kel").value, kat:$("#kat").value, jud:$("#jud").value, isi:isi.value};
+  for(const k in need){
+    const bad = !val[k].trim() || (k==="isi" && val[k].trim().length<20);
+    setErr(k, bad ? need[k] : ""); if(bad) ok = false;
+  }
+  const wa = $("#wa").value.replace(/[\s-]/g,"");
+  const waBad = !/^(\+62|62|0)8\d{7,12}$/.test(wa);
+  setErr("wa", waBad ? "Masukkan nomor WhatsApp yang benar, contoh 081234567890." : ""); if(waBad) ok = false;
+  const cb = $("#setuju").checked;
+  setErr("setuju", cb ? "" : "Centang persetujuan untuk melanjutkan."); if(!cb) ok = false;
+  return ok;
+}
+function show(type, text){ const m = $("#msg"); m.className = "msg " + type; m.textContent = text; m.scrollIntoView({block:"nearest",behavior:"smooth"}); }
+
+$("#f").addEventListener("submit", async e => {
+  e.preventDefault();
+  if(!validate()){ const first = document.querySelector(".invalid"); if(first) first.focus(); return; }
+  if(document.querySelector('[name="website"]').value) return; // honeypot
+  if(!ready){ show("bad","Formulir belum tersambung ke Google Spreadsheet. Isi SCRIPT_URL di kode halaman."); return; }
+  const btn = $("#kirim"); btn.disabled = true; btn.textContent = "Mengirim...";
+  const payload = {
+    nama:$("#nama").value.trim(), wa:$("#wa").value.replace(/[\s-]/g,""), kelurahan:$("#kel").value.trim(),
+    kategori:$("#kat").value, judul:$("#jud").value.trim(), isi:isi.value.trim()
+  };
+  try{
+    // text/plain menghindari preflight CORS; Apps Script tetap menerima isinya
+    await fetch(SCRIPT_URL, {method:"POST", mode:"no-cors", headers:{"Content-Type":"text/plain;charset=utf-8"}, body:JSON.stringify(payload)});
+    show("ok","Aspirasi Anda sudah terkirim. Terima kasih, kami akan menghubungi lewat WhatsApp bila perlu keterangan tambahan.");
+    $("#f").reset(); $("#cnt").textContent = "0";
+    setTimeout(loadStats, 2500);
+  }catch(err){
+    show("bad","Aspirasi belum terkirim. Periksa koneksi internet lalu kirim ulang.");
+  }finally{ btn.disabled = false; btn.textContent = "Kirim aspirasi"; }
+});
+
+async function loadStats(){
+  if(!ready) return;
+  try{
+    const r = await fetch(SCRIPT_URL + "?action=stats");
+    const d = await r.json();
+    $("#sTotal").textContent = d.total ?? 0;
+    $("#sMonth").textContent = d.bulanIni ?? 0;
+    const cats = Object.entries(d.kategori || {}).sort((a,b)=>b[1]-a[1]);
+    $("#sTop").textContent = cats.length ? cats[0][0].split(" ")[0] : "-";
+    const max = cats.length ? cats[0][1] : 1;
+    $("#bars").innerHTML = cats.map(([k,v]) =>
+      '<div class="row"><span>'+k.replace(/[<>&]/g,"")+'</span><div class="track"><div class="fill" data-w="'+Math.round(v/max*100)+'"></div></div><i>'+v+'</i></div>').join("") || "<p class='sub'>Belum ada data.</p>";
+    $("#live").hidden = false; $("#liveEmpty").hidden = true;
+    requestAnimationFrame(()=>document.querySelectorAll(".fill").forEach(f=>f.style.width=f.dataset.w+"%"));
+  }catch(e){ /* biarkan ringkasan tersembunyi bila gagal */ }
+}
+loadStats();
+</script>
+</body>
+</html>
